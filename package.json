@@ -1,0 +1,17 @@
+{
+  "name": "animating-website2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx vite serve --host",
+    "build": "npx vite build --emptyOutDir",
+    "preview": "npx vite preview --host"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "unsplash-js": "^7.0.19"
+  }
+}

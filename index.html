@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap"
+        rel="stylesheet">
+
+
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        
+#page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#page3>p {
+    font-size: 18px;
+    font-weight: 700;
+    width: 60%;
+    line-height: 45px;
+    text-align: center;
+}
+
+#page3 img {
+    position: absolute;
+    height: 60px;
+
+}
+
+#page3 #colon1 {
+    left: 20%;
+    top: 25%;
+}
+
+#page3 #colon2 {
+    right: 20%;
+    bottom: 25%;
+}
+
+#cards-container {
+
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+.overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(188, 55, 232);
+    padding: 30px;
+    padding-top: 80px;
+    opacity: 0;
+    transition: all ease 0.6s;
+    border-radius: 20px;
+}
+
+.overlay h4 {
+    color: #000;
+    font-size: 20px;
+}
+
+.overlay p {
+    color: #000;
+    font-size: 16px;
+}
+
+.cardd:hover .overlay {
+    opacity: 1;
+}
+
+.cardd:hover {
+    transform: rotate3d(-1, 1, 0, 20deg) !important;
+}
+
+
+#color-div {
+    height: 30vh;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    background-image: linear-gradient(to left bottom,  rgb(188, 55, 232), chartreuse);
+}
+
+#color-div h4 {
+    width: 60%;
+    line-height: 40px;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+#page4 {
+    height: 30vh;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+
+}
+
+.elem {
+    height: 70%;
+    width: 26%;
+    overflow: hidden;
+    border-radius: 20px;
+    position: relative;
+
+}
+
+.elem h2 {
+    height: 100%;
+    width: 100%;
+    background-color: rgb(188, 55, 232);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: #000;
+    position: absolute;
+    z-index: 10;
+    transition: all ease 0.5s;
+}
+
+.elem img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.elem:hover h2 {
+    color: #fff;
+    background-color: transparent;
+
+}
+
+.elem:hover img {
+    scale: 1;
+}
+
+
+#page4 h1 {
+    font-size: 80px;
+    position: absolute;
+    top: -15%;
+    font-family: 900;
+    font-family: sans-serif;
+    -webkit-text-stroke: 2px #fff;
+    color: #000;
+}
+
+#footer {
+    height: 40vh;
+    width: 100%;
+    background-image: linear-gradient(to left bottom,  rgb(188, 55, 232), chartreuse);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 150px;
+    padding: 0 100px;
+
+}
+
+#footer>img {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    z-index: 0;
+}
+
+#f1 img {
+    height: 100%;
+}
+
+#f1,
+#f2,
+#f3,
+#f4 {
+    width: fit-content;
+    position: relative;
+    z-index: 2
+}
+
+#f2 h3 {
+    font-size: 30px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+#f3 h3 {
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 800;
+    margin-bottom: 8px;
+}
+
+
+#f4 h4 {
+    font-size: 18px;
+    white-space: nowrap;
+    text-transform: uppercase;
+    color: #000;
+ 
+    margin-bottom: 8px;
+    line-height: 12px;
+}
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <img src="img/logo.png" alt="">
+        <a href="#main">Home</a>
+        <a href="#cards-container">Explore</a>
+        <a href="#about-us">About Us</a>
+     
+       
+    </div>
+    <div id="cursor"></div>
+    <div id="cursor-blur"></div>
+
+    <video autoplay loop muted src="videogame.mp4"></video>
+
+    <div id="main">
+        <div id="page1">
+            <h1>PLAY. COMPETE. CONQUER.</h1>
+            <h2>WELCOME TO GAME HIVE!</h2>
+            <p> your ultimate gaming destination! Dive into a world of excitement with the latest news, reviews, and tips. Join our community and level up your gaming experience today!
+               </p>
+
+            <div id="arrow"><i class="ri-arrow-down-line"></i></div>
+        </div>
+
+        <div id="page2">
+
+            <div id="scroller">
+                <div id="scroller-in">
+                    <h4> JOIN </h4>
+                    <h4> US</h4>
+                    <h4>AND</h4>
+                    <h4> LEVEL</h4>
+                    <h4> UP</h4>
+                    <h4> YOUR</h4>
+                    <h4> PLAY!</h4>
+                  
+                </div>
+                 <div id="scroller-in">
+                    <h4> JOIN </h4>
+                    <h4> US</h4>
+                    <h4>AND</h4>
+                    <h4> LEVEL</h4>
+                    <h4> UP</h4>
+                    <h4> YOUR</h4>
+                    <h4> PLAY!</h4>
+                  
+                </div>
+            </div>6
+
+            <div id="about-us">
+                <img src="img/g.jpg" alt="">
+                <div id="about-us-in">
+                    <h3>ABOUT US</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officiis exercitationem numquam sed
+                        iste consectetur est soluta aperiam praesentium, explicabo blanditiis tempore voluptatibus
+                        eligendi dignissimos aut accusantium cum repudiandae. Tempore, commodi?</p>
+                </div>
+                <img src="img/a.jpg" alt="">
+            </div>
+
+            <div id="cards-container">
+                <!-- <div class="cardd" id="card1">
+                    <div class="overlay">
+                        <h4>TopRacer Range</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cum iste culpa explicabo
+                            aspernatur veritatis odio consequuntur. Rem, exercitationem obcaecati.</p>
+                    </div>
+                </div>
+                <div class="cardd" id="card2">
+                    <div class="overlay">
+                        <h4>TopRacer Range</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cum iste culpa explicabo
+                            aspernatur veritatis odio consequuntur. Rem, exercitationem obcaecati.</p>
+                    </div>
+                </div>
+                <div class="cardd" id="card3">
+                    <div class="overlay">
+                        <h4>TopRacer Range</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam cum iste culpa explicabo
+                            aspernatur veritatis odio consequuntur. Rem, exercitationem obcaecati.</p>
+                    </div>
+                </div> -->
+    
+            </div>
+    
+            <div id="color-div">
+                <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus et omnis vel doloribus
+                    consequuntur aliquam ipsum facere. Debitis quas quaerat quibusdam odit sed laboriosam, rem quisquam
+                    architecto obcaecati voluptatibus sequi?</h4>
+            </div>
+
+
+        </div>
+
+        <div id="page3">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, quae culpa labore nam at, debitis
+                soluta ad sapiente, repudiandae itaque ducimus nihil expedita placeat facere cumque molestias excepturinisi quos.</p>
+            <img id="colon1" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-left.svg"
+                alt="">
+            <img id="colon2" src="https://eiwgew27fhz.exactdn.com/wp-content/themes/puttosaurus/img/quote-right.svg"
+                alt="">
+        </div>
+
+        <div id="page4">
+            <h1>WHAT ARE YOU WAITING FOR?</h1>
+            <div class="elem">
+                <h2> Gaming Glory</h2>
+                <img src="img/c2.jpg" alt="">
+            </div>
+
+            <div class="elem">
+                <h2>Game Zone</h2>
+                <img src="img/e.jpg" alt="">
+            </div>
+
+            <div class="elem">
+                <h2>Gaming Potential</h2>
+                <img src="img/f.jpg" alt="">
+            </div>
+        </div>
+
+        <div id="footer">
+            <img src="img/logo.png" alt="">
+            <div id="f1">
+            </div>
+
+            <div id="f2">
+                <h3>- Home</h3>
+                <h3> - About Us</h3>
+                <h3>   - Games</h3>
+            </div>
+
+            <div id="f3">
+                <h3>- Facebook</h3>
+                <h3>- Twitter</h3>
+                <h3>- Instagram</h3>
+            </div>
+
+            <div id="f4">
+                <h4>- Terms of Service</h4>
+                <h4>- Privacy Policy</h4>
+                <h4>- Cookie Policy</h4>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script type="module" src="script.js"></script>
+</body>
+
+</html>
